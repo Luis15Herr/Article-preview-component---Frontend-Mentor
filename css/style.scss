@@ -6,6 +6,7 @@ body {
     font-family: "Manrope", sans-serif;
     display: flex;
     align-items: center;
+    background-color: hsl(210, 46%, 95%);
 
     .main {
         height: 82.5%;
@@ -14,7 +15,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: hsl(210, 46%, 95%);
+  
 
         .article-preview {
             width: 55%;
