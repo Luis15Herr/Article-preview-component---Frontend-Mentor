@@ -15,9 +15,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-  
 
         .article-preview {
+    
             width: 55%;
             background-color: #fff;
             border-radius: 10px;
@@ -26,6 +26,7 @@ body {
                 width: 45%;
                 border-radius: 10px 0 0px 10px;
                 overflow: hidden;
+                transition: 0.3s ease all;
                 .article-img {
                     background-image: url("../images/drawers.jpg");
                     background-size: cover;
@@ -39,6 +40,7 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 padding-right: 50px;
+                transition: 0.3s ease all;
                 .article-text {
                     height: 100%;
                     padding: 30px 15px 0px 45px;
@@ -61,6 +63,7 @@ body {
                     justify-content: space-between;
                     align-items: center;
                     padding: 0px 0px 30px 45px;
+                    transition: 0.3s ease all;
 
                     .creator {
                         display: flex;
@@ -70,7 +73,7 @@ body {
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-image: url('../images/avatar-michelle.jpg');
+                            background-image: url("../images/avatar-michelle.jpg");
                             background-size: cover;
                         }
                         .creatorname-date {
@@ -97,16 +100,20 @@ body {
                             border-radius: 50%;
                             padding: 7px 10px;
                             background-color: hsl(210, 46%, 95%);
+                            transition: 0.3s ease all;
+
                             .icon {
                                 fill: #6e8098;
                             }
                         }
                         .isActive {
                             background-color: hsl(214, 17%, 51%);
+                            transition: 0.3s ease all;
                             .icon {
                                 fill: hsl(210, 46%, 95%);
                             }
                         }
+
                         .social {
                             background-color: hsl(217, 19%, 35%);
                             position: absolute;
@@ -114,8 +121,9 @@ body {
                             border-radius: 10px;
                             left: 50%;
                             transform: translateX(-50%);
-                            display: none;
                             transition: 0.3s ease all;
+                            opacity: 0;
+                            visibility: hidden;
 
                             .box {
                                 position: relative;
@@ -158,9 +166,14 @@ body {
                                 margin: 0 7px;
                             }
                         }
+                        .socialActive {
+                            opacity: 1;
+                            visibility: visible;
+                        }
                     }
                     .social-mobile {
                         display: none;
+
                         .box {
                             position: relative;
                             align-items: center;
@@ -184,6 +197,7 @@ body {
                     }
                 }
                 .csActive {
+                    transition: 0.3s ease all;
                     background-color: #48556a;
                 }
             }
@@ -196,7 +210,7 @@ body {
         .main {
             height: 100%;
             .article-preview {
-                width: 85%;
+                width: 80%;
                 flex-direction: column;
                 border-radius: 15px;
                 overflow: hidden;
@@ -208,8 +222,9 @@ body {
                 }
                 .right {
                     width: 100%;
+                    padding-right: 0;
                     .article-text {
-                        padding: 20px 30px 20px 20px;
+                        padding: 20px 30px 10px 20px;
                         .head h2 {
                             font-size: 1em;
                         }

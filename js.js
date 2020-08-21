@@ -1,11 +1,11 @@
 function social() {
   $("#btn").addClass('isActive');
-  $("#social").css('display', 'block')
+  $("#social").addClass('socialActive')
 
   $(document).mouseup(function (e) {
     var container = $("#social");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.hide();
+      $('#social').removeClass('socialActive');
       $('#btn').removeClass('isActive');
     }
   });
