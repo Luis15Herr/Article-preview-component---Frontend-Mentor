@@ -267,7 +267,7 @@ body .main .article-preview .right .csActive {
   background-color: #48556a;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body .main {
     height: 100%;
   }
