@@ -253,7 +253,7 @@ body .main .article-preview .right .creator-share .social-mobile p {
   letter-spacing: 4px;
   color: #ecf2f8;
   text-transform: uppercase;
-  margin: 0 7px;
+  margin-right: 7px;
 }
 
 body .main .article-preview .right .creator-share .social-mobile .social-item {
@@ -272,7 +272,7 @@ body .main .article-preview .right .csActive {
     height: 100%;
   }
   body .main .article-preview {
-    width: 80%;
+    width: 85%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
