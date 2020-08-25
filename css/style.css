@@ -272,7 +272,7 @@ body .main .article-preview .right .csActive {
     height: 100%;
   }
   body .main .article-preview {
-    width: 85%;
+    width: 80%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
