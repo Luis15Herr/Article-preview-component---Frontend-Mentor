@@ -1,7 +1,11 @@
+html{
+    height: 100%;
+}
+
 body {
     margin: auto;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
     font-family: "Manrope", sans-serif;
     display: flex;
@@ -9,7 +13,6 @@ body {
     background-color: hsl(210, 46%, 95%);
 
     .main {
-        height: 82.5%;
         width: 1440px;
         margin: auto;
         display: flex;
@@ -17,7 +20,6 @@ body {
         align-items: center;
 
         .article-preview {
-    
             width: 55%;
             background-color: #fff;
             border-radius: 10px;
@@ -205,12 +207,22 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1030px) {
+    body {
+        .main {
+            .article-preview {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
     body {
         .main {
             height: 100%;
             .article-preview {
-                width: 80%;
+                width: 40%;
                 flex-direction: column;
                 border-radius: 15px;
                 overflow: hidden;
@@ -256,6 +268,16 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        .main {
+            .article-preview {
+                width: 80%;
             }
         }
     }
